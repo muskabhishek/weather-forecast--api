@@ -72,7 +72,7 @@
       loading.classList.remove('hidden');
 
       try {
-        const response = await fetch(`http://127.0.0.1:8000/api/v1/forecast?locality=${encodeURIComponent(locality)}`);
+       const response = await fetch(`https://weather-forecast-api-s12l.onrender.com/api/v1/forecast?locality=${encodeURIComponent(locality)}`);
         const data = await response.json();
 
         if (response.ok) {
